@@ -6,4 +6,19 @@ function testThatNoteControllerCanBeInstantiated() {
   }
 };
 
+function testThatNoteControllerUpdatesInnerHtmlOfElement() {
+  function htmlDouble() {
+    this.innerHTML = null
+  }
+  htmlDouble = new htmlDouble();
+  var noteList = new NoteList();
+  noteList.addToList("test note");
+  var noteController = new NoteController(noteList);
+  noteController.updateHtml(htmlDouble);
+  if(htmlDouble.innerHTML !== "<ul><li><div>test note</div></li></ul>") {
+    throw new Error("innerHTML of object did not get updated")
+  }
+};
+
 testThatNoteControllerCanBeInstantiated();
+testThatNoteControllerUpdatesInnerHtmlOfElement();
