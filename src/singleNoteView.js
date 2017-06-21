@@ -4,10 +4,7 @@
   }
 
     SingleNoteView.prototype.outputHtmlText = function() {
-      var note = "<div>";
-      note += this.note.text;
-      note += "</div>"
-    return note;
+      return ("<div>" + this.note.text + "</div>");
   }
 
 exports.SingleNoteView = SingleNoteView;
