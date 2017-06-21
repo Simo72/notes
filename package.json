@@ -1,0 +1,25 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "Further JavaScript 20 June - Notes challenge",
+  "main": "note-model.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simo72/notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Simo72/notes/issues"
+  },
+  "homepage": "https://github.com/Simo72/notes#readme",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
+}
