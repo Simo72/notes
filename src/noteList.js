@@ -12,6 +12,4 @@
   }
 
   exports.NoteList = NoteList;
-  // exports.NoteList.prototype.addToList = NoteList.prototype.addToList
-  // exports.NoteList.prototype.viewNotes = NoteList.prototype.viewNotes
 })(this);

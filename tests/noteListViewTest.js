@@ -10,7 +10,6 @@
 
 
     if (noteListView.htmlView(noteList) !== "<ul><li><div>Canard</div></li><li><div>Barry</div></li><li><div>Owliver</div></li></ul>") {
-      console.log(noteListView)
       throw new Error("Not correct HTML view")
     }
   };
